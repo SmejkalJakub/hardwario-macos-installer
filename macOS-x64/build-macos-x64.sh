@@ -163,7 +163,7 @@ function signProduct() {
 function createInstaller() {
     log_info "Application installer generation process started.(3 Steps)"
     buildPackage
-    buildProduct ${PRODUCT}-macos-installer-x64-${VERSION}.pkg
+    buildProduct ${PRODUCT}-macos-${VERSION}.pkg
     #while true; do
     #    read -p "Do you wish to sign the installer (You should have Apple Developer Certificate) [y/N]?" answer
     #    [[ $answer == "y" || $answer == "Y" ]] && FLAG=true && break
