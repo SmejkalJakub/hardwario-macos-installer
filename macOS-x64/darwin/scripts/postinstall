@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Parameters
-PRODUCT_HOME=~/Applications/__PRODUCT__/
+PRODUCT_HOME=/tmp/
 
 echo "Post installation process started"
 
@@ -9,6 +9,8 @@ echo "Post installation process started"
 echo "Change permissions in product home"
 cd ${PRODUCT_HOME}
 chmod -R 777 .
-cd hardwario-code
 xattr -dr com.apple.quarantine Visual\ Studio\ Code.app
+
+mv /tmp/hardwario-code -f ~/Applications/
+
 echo "Post installation process finished"
