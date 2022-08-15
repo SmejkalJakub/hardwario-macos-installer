@@ -12,5 +12,6 @@ chmod -R 777 .
 xattr -dr com.apple.quarantine Visual\ Studio\ Code.app
 
 mv /tmp/hardwario-code -f ~/Applications/
+rm -rf /tmp/hardwario-code
 
 echo "Post installation process finished"
