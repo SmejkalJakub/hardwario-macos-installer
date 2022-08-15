@@ -9,6 +9,9 @@
     <options customize="never" allow-external-scripts="no"/>
     <domains enable_localSystem="true" />
     <installation-check script="installCheck();"/>
+    <domains enable_currentUserHome="true"/>
+    <domains enable_localSystem="false"/>
+    <domains enable_anywhere="true"/>
     <script>
 function installCheck() {
     if(!(system.compareVersions(system.version.ProductVersion, '10.6.0') >= 0)) {
