@@ -8,6 +8,7 @@ echo "Post installation process started"
 #Change permissions in home directory
 echo "Change permissions in product home"
 cd ${PRODUCT_HOME}
+cd hardwario-code
 chmod -R 777 .
 xattr -dr com.apple.quarantine Visual\ Studio\ Code.app
 
