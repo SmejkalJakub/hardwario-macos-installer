@@ -136,6 +136,7 @@ function buildPackage() {
     --version "${VERSION}" \
     --scripts "${TARGET_DIRECTORY}/darwin/scripts" \
     --root "${TARGET_DIRECTORY}/darwinpkg" \
+    --install-location "\"$HOME/Applications\"" \
     "${TARGET_DIRECTORY}/package/${PRODUCT}.pkg" > /dev/null 2>&1
 }
 
