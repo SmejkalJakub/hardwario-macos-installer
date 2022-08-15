@@ -7,11 +7,10 @@
     <conclusion file="conclusion.html" mime-type="text/html" />
     <license file="LICENSE.txt"/>
     <options customize="never" allow-external-scripts="no"/>
-    <domains enable_localSystem="true" />
     <installation-check script="installCheck();"/>
     <domains enable_currentUserHome="true"/>
     <domains enable_localSystem="false"/>
-    <domains enable_anywhere="true"/>
+    <domains enable_anywhere="false"/>
     <script>
 function installCheck() {
     if(!(system.compareVersions(system.version.ProductVersion, '10.6.0') >= 0)) {
