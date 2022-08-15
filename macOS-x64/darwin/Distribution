@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <installer-script minSpecVersion="1.000000">
-    <title>Install HARDWARIO Code</title>
+    <title>HARDWARIO Code</title>
     <!--<background mime-type="image/png" file="banner.png" scaling="proportional"/>
     <background-darkAqua mime-type="image/png" file="banner.png" scaling="proportional"/>-->
     <welcome file="welcome.html" mime-type="text/html" />
