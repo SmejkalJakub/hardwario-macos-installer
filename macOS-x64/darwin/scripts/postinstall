@@ -15,4 +15,9 @@ xattr -dr com.apple.quarantine Visual\ Studio\ Code.app
 mv /tmp/hardwario-code -f ~/Applications/
 rm -rf /tmp/hardwario-code
 
+mv ~/Applications/hardwario-code/Visual\ Studio\ Code.app ~/Applications/hardwario-code/HARDWARIO\ Code.app
+xattr -dr com.apple.quarantine ~/Applications/hardwario-code/HARDWARIO\ Code.app
+
+mv ~/Applications/hardwario-code ~/Applications/HARDWARIO\ Code
+
 echo "Post installation process finished"
