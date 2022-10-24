@@ -153,7 +153,7 @@ function signProduct() {
     mkdir -pv "${TARGET_DIRECTORY}/pkg-signed"
     chmod -R 755 "${TARGET_DIRECTORY}/pkg-signed"
 
-    productsign --sign "Developer ID Installer: com.hardwario.code" \
+    productsign --sign "Developer ID Installer: hardwario" \
     "${TARGET_DIRECTORY}/pkg/$1" \
     "${TARGET_DIRECTORY}/pkg-signed/$1"
 
