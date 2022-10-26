@@ -153,9 +153,6 @@ function signProduct() {
     mkdir -pv "${TARGET_DIRECTORY}/pkg-signed"
     chmod -R 755 "${TARGET_DIRECTORY}/pkg-signed"
 
-    codesign --deep --force --verify --timestamp --verbose --sign "Developer ID Installer: HARDWARIO s.r.o." --options runtime \
-    "${TARGET_DIRECTORY}/pkg/$1" \
-
     pkgutil --check-signature "${TARGET_DIRECTORY}/pkg/$1"
 }
 
