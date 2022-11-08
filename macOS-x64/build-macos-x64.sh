@@ -153,11 +153,11 @@ function signProduct() {
     mkdir -pv "${TARGET_DIRECTORY}/pkg-signed"
     chmod -R 755 "${TARGET_DIRECTORY}/pkg-signed"
 
-    productsign --timestamp --sign "Developer ID Installer: hardwario" \
+    productsign --sign "Developer ID Installer: hardwario" \
     "${TARGET_DIRECTORY}/pkg/$1" \
     "${TARGET_DIRECTORY}/pkg-signed/$1"
 
-    pkgutil --check-signature "${TARGET_DIRECTORY}/pkg-signed/$1"
+    #pkgutil --check-signature "${TARGET_DIRECTORY}/pkg-signed/$1"
 }
 
 function createInstaller() {
